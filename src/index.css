@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-black text-gray-100;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply min-h-screen bg-gradient-to-b from-black via-gray-900 to-black;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23990000' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif font-normal;
+  }
+  
+  p, span, div, a, button, input, textarea {
+    @apply font-sans;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-gray-900/80 backdrop-blur-sm border border-gray-800 rounded-xl shadow-xl p-6;
+  }
+  
+  .btn-primary {
+    @apply px-4 py-2 bg-strawberry-900 hover:bg-strawberry-800 transition-colors duration-300 rounded-md shadow-md;
+  }
+  
+  .btn-secondary {
+    @apply px-4 py-2 bg-gray-800 hover:bg-gray-700 transition-colors duration-300 rounded-md shadow-md;
+  }
+  
+  .input-field {
+    @apply w-full bg-gray-800 border border-gray-700 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-strawberry-800 text-gray-100;
+  }
+  
+  .mystery-text {
+    @apply font-serif italic text-gray-400;
+  }
+  
+  .cryptic-message {
+    @apply font-serif text-gray-300 italic leading-relaxed;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-strawberry-900 rounded-full;
+}
