@@ -1,4 +1,5 @@
 # 🍓 Become The Strawberry Man
+<img width="1151" alt="Screenshot 2025-06-01 at 10 24 46 AM" src="https://github.com/user-attachments/assets/387082a2-5c5c-4e89-8743-88a1739d7908" />
 
 A sophisticated web application for crafting and managing an enigmatic online persona, inspired by the intriguing @iruletheworldmo phenomenon. This tool helps users develop a mysterious digital presence through symbolic language, strategic narrative building, and audience engagement analytics.
 
